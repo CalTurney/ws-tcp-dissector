@@ -11,10 +11,9 @@ o  Detailed SACK Info:  I have a capture with 215 outstanding gaps in the byte s
 
 o  Fixed Congestion Point Analysis (FCPA):  This statistical tool calculates the average number of bytes that were outstanding (unACKed) when the first retransmission of each packet loss event arrived. The tool is useful in cases where receiver’s window size is larger than the number of bytes/frames the network can store before they can be forwarded. For example, the receiver’s window is set to 64 KB and on average 48 KB with a STDEV of 2KB were outstanding when the first retransmission of each recovery event occurred.  In this case we would recommend that the receiver’s window be reduced to 46KB. If throughput improves but remains below the customer’s requirements we determine the point(s) in the path where packets loss is occurring and recommend such things as load balancing, the addition of memory to devicesd in the path, and the reconfiguration of the QoS (priority) scheme.
 
-NOTE: An FCPA must only be used with captures taken on or near the data sender. This version automatically detects this but the user can manually set it. If it is determined or manually designated that the capture was taken on the receiver's side of the connection, an FCPA is not conducted.   
+NOTE: An FCPA is only conducted if the data sender's flow of a given connection resides in a capture that was taken on or near the sender. Data origination is automatically detected but can be manually set as well.
 
-My group has used this WS version for the analysis of packet loss and clear evidence of protocol violations in TCP implementations.   
-I’ve not received a bug report in the past three years; however, I discovered a couple of minor ones that need to be fixed.
+My group has used this version for the analysis of packet loss and evidence of protocol violations in TCP implementations for more than three years. I have not received a bug report in the past 2.5 years; however, I need to fix a bug I found where in a certain scenario an OOO packet is mistakenly labelled as "Unwarrented". In addition, two minor enhancements and a fix of a minor bug need to be added.  
 
-Do these changes increase dissection latency:  I compared the latency between the original and updated version and found very little difference. If needed, I can perform an ANOVA to statistically substantiate this finding.
+Do these changes increase dissection latency?  I compared the latency between the original and updated versions and found very little difference. If needed, I can substantiate this finding statistically.
  

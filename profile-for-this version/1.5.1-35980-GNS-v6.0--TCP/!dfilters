@@ -1,0 +1,25 @@
+"ETH Frame range" (frame.number > 10) && (frame.number <= 100)
+
+"tcp retransmission" tcp.analysis.retransmission
+"TCP push" tcp.flags.push
+"tcp reset" tcp.flags.reset==1
+"TCP Duplicate ACK" tcp.analysis.duplicate_ack
+"TCP SYN set" tcp.flags.syn == 1
+"TCP Out of order segment" tcp.analysis.out_of_order
+"TCP Duplicate ACK" tcp.analysis.duplicate_ack
+"TCP Reset (RST) Flag" tcp.flags.reset ==1
+"TCP Keepalive" tcp.analysis.keep_alive_ack
+"TCP ACK RTT" tcp.analysis.ack_rtt
+"TCP SACK frames - packets with SACK " tcp.options.sack
+"TCP SACK" tcp.options.sack
+"TCP Window Full" tcp.analysis.window_full
+"TCP RTO (Retransmission TimeOut)" tcp.analysis.rto
+"TCP Previous segment lost" tcp.analysis.lost_segment
+"TCP SYN FIN or RST " tcp.flags.syn == 1 or tcp.flags.fin == 1 or tcp.flags.reset == 1
+"TCP retransmission or out of order segment" tcp.analysis.retransmission or tcp.analysis.out_of_order
+"TCP zero window" tcp.analysis.zero_window
+"TCP Push Flag set" tcp.flags.push==1
+"TCP Push Bit Set" tcp.flags.push == 1
+
+"Delta > 20ms" frame.time_delta > .020
+

@@ -2,7 +2,7 @@
 @SYN FIN or RST@tcp.flags.syn == 1 or tcp.flags.fin == 1 or tcp.flags.reset == 1@[28922,13370,43091][65535,65535,65535]
 @TCP Out-of-Order segment@tcp.analysis.out_of_order@[63377,31652,9489][65535,65535,65535]
 @Unwarranted rexmit@tcp.analysis.retransmission_unwarranted@[65535,32639,42148][0,0,0]
-@Retransmissions@tcp.analysis.retransmission or rpc.dup@[65534,0,0][65535,65535,65535]
+@Retransmissions@tcp.analysis.retransmission or rpc.dup@[49024,5941,5941][65535,65535,65535]
 @TCP Zero Window@tcp.analysis.zero_window or tcp.analysis.zero_window_probe or tcp.analysis.zero_window_probe_ack@[64045,7212,34264][65535,65535,65535]
 @Window Full@tcp.analysis.window_full@[63656,33653,3641][65535,65535,65535]
 @partner can exit recovery@tcp.analysis.can_exit_recovery@[38036,64507,65535][0,0,0]

@@ -13,7 +13,7 @@ o  Fixed Congestion Point Analysis (FCPA):  This statistical tool calculates the
 
 NOTE: An FCPA is only conducted if the data sender's flow of a given connection resides in a capture that was taken on or near the sender. Data origination is automatically detected but can be manually set as well.
 
-My group has used this version for the analysis of packet loss and evidence of protocol violations in TCP implementations for more than three years. I have not received a bug report in the past 2.5 years; however, I need to fix a bug I found where in a certain scenario an OOO packet is mistakenly labelled as "Unwarrented". In addition, two minor enhancements and a fix of a minor bug need to be added.  
+My group has used this version for the analysis of packet loss and evidence of protocol violations in TCP implementations for more than three years. I have not received a bug report in the past 2.5 years; however, I need to fix a bug I found where in a certain scenario an OOO packet is mistakenly labelled as "Unwarranted". In addition, two minor enhancements and a fix of a minor bug need to be added.  
 
 Do these changes increase dissection latency?  I compared the latency between the original and updated versions and found very little difference. If needed, I can substantiate this finding statistically.
  

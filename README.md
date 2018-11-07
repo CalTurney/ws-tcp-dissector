@@ -1,5 +1,5 @@
 # ws-tcp-dissector
-This repo provides a means for Wireshark core developers to review my proposed changes to the TCP dissector.  I have supplied the source code of the original and updated versions of packet-tcp.c/.h, example captures depicting each feature, a profile that displays useful columns, and a colorfilters file with entries for the added fields.    
+This repo provides a means for Wireshark core developers to review proposed changes to the TCP dissector.  I have supplied the source code of the original and updated versions of packet-tcp.c/.h, example captures depicting each feature, a profile that displays useful columns, and a colorfilters file with entries for the added fields.    
 
 I added the several features to the TCP dissector in 'WS-1.5.1 SVN-35980' for my network analysis group at Dell-EMC none of which have been submitted for public distribution.  The most important features follows: 
 

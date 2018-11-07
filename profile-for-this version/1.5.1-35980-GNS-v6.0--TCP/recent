@@ -55,7 +55,7 @@ gui.seconds_format: SECONDS
 
 # Zoom level.
 # A decimal number.
-gui.zoom_level: 0
+gui.zoom_level: 1
 
 # Bytes view.
 # A decimal number.
@@ -63,15 +63,15 @@ gui.bytes_view: 0
 
 # Main window upper (or leftmost) pane size.
 # Decimal number.
-gui.geometry_main_upper_pane: 516
+gui.geometry_main_upper_pane: 343
 
 # Main window middle pane size.
 # Decimal number.
-gui.geometry_main_lower_pane: 897
+gui.geometry_main_lower_pane: 1012
 
 # Packet list column pixel widths.
 # Each pair of strings consists of a column format and its pixel width.
-column.width: %m, 52:C, %us, 104, %S, 58, %ud, 104, %D, 59, %Yt, 194:C, %Rt, 71, %Tt, 64, %Gt, 73, %Cus:tcp.time_delta, 70, %Cus:ip.id, 81, %i, 512, %Cus:tcp.analysis.ack_rtt, 81, %Cus:tcp.analysis.acks_frame, 81, %Cus:tcp.len, 81, %Cus:tcp.analysis.orig_unacked, 76, %Cus:frame.time_epoch, 81, %Cus:tcp.analysis.bif, 81, %L, 49, %Cus:tcp.analysis.unacked, 81, %Cus:tcp.analysis.unacked_in_rev, 81, %Cus:tcp.options.sack_total_gaps, 86, %p, 684:C, %B, 71, %Cus:tcp.analysis.bytes_in_flight, 81
+column.width: %m, 64:C, %us, 111, %S, 58, %ud, 114, %D, 61, %Yt, 194:C, %Rt, 95:R, %Tt, 64, %Gt, 83:C, %Cus:tcp.time_delta, 70, %i, 817, %Cus:tcp.nxtseq, 79, %Cus:tcp.len, 60, %Cus:tcp.analysis.unacked_in_rev, 81, %Cus:tcp.analysis.bif, 81, %Cus:ip.id, 133, %Cus:tcp.analysis.orig_unacked, 76:C, %Cus:tcp.analysis.acks_frame, 88:C, %Cus:tcp.analysis.unacked, 216, %Cus:tcp.analysis.ack_rtt, 81, %Cus:frame.time_epoch, 81, %L, 49, %Cus:tcp.options.sack_total_gaps, 135, %B, 71, %p, 164:C
 
 # Last directory navigated to in File Open dialog.
-gui.fileopen_remembered_dir: F:/REFERENCE CAPTURES/SMB2\
+gui.fileopen_remembered_dir: F:\REFERENCE CAPTURES\TCP\LSO\
